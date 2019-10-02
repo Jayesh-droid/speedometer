@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/speed1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:layout_gravity="top"
+    android:elevation="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+       <com.github.anastr.speedviewlib.PointerSpeedometer
+        android:id="@+id/pointerSpeedometer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+           android:background="#000000"
+        android:gravity="center"
+        app:sv_backgroundCircleColor="#00000000" />
+
+
+
+       <TextView
+           android:id="@+id/titleMaxSpeed"
+           android:text="@string/max_speed"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="@android:color/black"
+           android:layout_below="@id/pointerSpeedometer"
+           android:layout_marginTop="10dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginLeft="16dp"
+           android:layout_marginStart="16dp"
+           />
+
+       <TextView
+           android:id="@+id/maxSpeed"
+           android:text=""
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="@android:color/black"
+           android:layout_below="@id/pointerSpeedometer"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginEnd="20dp"
+          />
+       <View
+           android:id="@+id/separator1"
+           android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="5dp"
+           android:layout_below="@+id/maxSpeed"
+           android:background="#D3D3D3"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           />
+
+
+       <TextView
+           android:id="@+id/titleAverageSpeed"
+           android:text="@string/avg_speed"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="@android:color/black"
+           android:layout_below="@id/separator1"
+           android:layout_marginTop="10dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginLeft="20dp"
+           android:layout_marginStart="20dp"
+
+            />
+
+    <TextView
+        android:id="@+id/averageSpeed"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/separator1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/averageSpeed"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+           android:id="@+id/titleDistance"
+           android:text="@string/distance"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="@android:color/black"
+           android:layout_below="@id/separator2"
+           android:layout_marginTop="10dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginLeft="20dp"
+           android:layout_marginStart="20dp" />
+
+       <TextView
+           android:id="@+id/distance"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="@android:color/black"
+           android:layout_below="@id/separator2"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginEnd="20dp" />
+
+
+
+    <View
+        android:id="@+id/separator3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/distance"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/titleAccuracy"
+        android:text="Accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/separator3"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/accuracy"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/titleAccuracy"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignRight="@+id/separator4"
+        android:layout_alignEnd="@+id/separator4" />
+
+    <View
+        android:id="@+id/separator4"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#D3D3D3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/separator3"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/titleSatellite"
+        android:text="Satellite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/separator3"
+        android:layout_toRightOf="@id/separator4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/satellite"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/titleSatellite"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <View
+        android:id="@+id/separator5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        android:elevation="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/satellite"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+
+
+

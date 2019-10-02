@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Speedometer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Speedometer</string>
+    <string name="max_speed">Max Speed</string>
+    <string name="avg_speed">Average Speed</string>
+    <string name="distance">Distance</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_speedometer">speedometer</string>
+    <string name="title_activity_speedmeter">speedmeter</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_speedometre_fragment">SpeedometreFragment</string>
+    <string name="title_activity_speedo_meter">SpeedoMeter</string>
+    <string name="title_activity_compass">Compass</string>
+    <string name="title_activity_setting">Setting</string>
+</resources>
